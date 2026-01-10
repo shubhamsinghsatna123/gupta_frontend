@@ -1,0 +1,183 @@
+[
+  {
+    "id": 1,
+    "name": "Basmati Rice (5kg)",
+    "category": "Groceries",
+    "type": "General",
+    "price": 450,
+    "stock": "In Stock",
+    "image": "rice"
+  },
+  {
+    "id": 2,
+    "name": "Sunflower Oil (1L)",
+    "category": "Groceries",
+    "type": "General",
+    "price": 150,
+    "stock": "In Stock",
+    "image": "oil"
+  },
+  {
+    "id": 3,
+    "name": "Sugar (1kg)",
+    "category": "Groceries",
+    "type": "General",
+    "price": 50,
+    "stock": "In Stock",
+    "image": "sugar"
+  },
+  {
+    "id": 4,
+    "name": "Toor Dal (1kg)",
+    "category": "Groceries",
+    "type": "General",
+    "price": 120,
+    "stock": "In Stock",
+    "image": "dal"
+  },
+  {
+    "id": 5,
+    "name": "Tea (500g)",
+    "category": "Groceries",
+    "type": "General",
+    "price": 180,
+    "stock": "In Stock",
+    "image": "tea"
+  },
+  {
+    "id": 6,
+    "name": "Biscuits Pack",
+    "category": "Groceries",
+    "type": "General",
+    "price": 30,
+    "stock": "In Stock",
+    "image": "biscuits"
+  },
+  {
+    "id": 7,
+    "name": "Detergent Powder (1kg)",
+    "category": "Household Items",
+    "type": "General",
+    "price": 95,
+    "stock": "In Stock",
+    "image": "detergent"
+  },
+  {
+    "id": 8,
+    "name": "Soap Bar (Pack of 4)",
+    "category": "Household Items",
+    "type": "General",
+    "price": 80,
+    "stock": "In Stock",
+    "image": "soap"
+  },
+  {
+    "id": 9,
+    "name": "Cement Bag (50kg)",
+    "category": "Paints",
+    "type": "Hardware",
+    "price": 380,
+    "stock": "In Stock",
+    "image": "cement"
+  },
+  {
+    "id": 10,
+    "name": "White Paint (1L)",
+    "category": "Paints",
+    "type": "Hardware",
+    "price": 250,
+    "stock": "In Stock",
+    "image": "paint"
+  },
+  {
+    "id": 11,
+    "name": "Hammer",
+    "category": "Tools",
+    "type": "Hardware",
+    "price": 150,
+    "stock": "In Stock",
+    "image": "hammer"
+  },
+  {
+    "id": 12,
+    "name": "Screwdriver Set",
+    "category": "Tools",
+    "type": "Hardware",
+    "price": 200,
+    "stock": "In Stock",
+    "image": "screwdriver"
+  },
+  {
+    "id": 13,
+    "name": "Wrench Set",
+    "category": "Tools",
+    "type": "Hardware",
+    "price": 350,
+    "stock": "In Stock",
+    "image": "wrench"
+  },
+  {
+    "id": 14,
+    "name": "Electrical Wire (10m)",
+    "category": "Electrical",
+    "type": "Hardware",
+    "price": 180,
+    "stock": "In Stock",
+    "image": "wire"
+  },
+  {
+    "id": 15,
+    "name": "Switch (Single)",
+    "category": "Electrical",
+    "type": "Hardware",
+    "price": 45,
+    "stock": "In Stock",
+    "image": "switch"
+  },
+  {
+    "id": 16,
+    "name": "LED Bulb (9W)",
+    "category": "Electrical",
+    "type": "Hardware",
+    "price": 120,
+    "stock": "In Stock",
+    "image": "bulb"
+  },
+  {
+    "id": 17,
+    "name": "PVC Pipe (1 inch, 3m)",
+    "category": "Plumbing",
+    "type": "Hardware",
+    "price": 220,
+    "stock": "In Stock",
+    "image": "pipe"
+  },
+  {
+    "id": 18,
+    "name": "Tap (Bathroom)",
+    "category": "Plumbing",
+    "type": "Hardware",
+    "price": 450,
+    "stock": "In Stock",
+    "image": "tap"
+  },
+  {
+    "id": 19,
+    "name": "Pipe Fitting Set",
+    "category": "Plumbing",
+    "type": "Hardware",
+    "price": 180,
+    "stock": "In Stock",
+    "image": "fitting"
+  },
+  {
+    "id": 20,
+    "name": "Wheat Flour (5kg)",
+    "category": "Groceries",
+    "type": "General",
+    "price": 200,
+    "stock": "Out of Stock",
+    "image": "flour"
+  }
+]
+
