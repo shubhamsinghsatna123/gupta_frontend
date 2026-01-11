@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Phone, Store, Loader2 } from 'lucide-react'
 import ProductCard from '../components/ProductCard'
-import { getProducts } from '../utils/products'
+import { getPublicProducts } from '../utils/products'
 
 const Home = () => {
   const [productsData, setProductsData] = useState([])
@@ -13,7 +13,7 @@ const Home = () => {
     const loadProducts = async () => {
       setLoading(true)
       try {
-        const products = await getProducts()
+        const products = await getPublicProducts()
         setProductsData(products)
       } catch (error) {
         console.error('Error loading products:', error)

@@ -16,7 +16,6 @@ import {
 } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { fetchProducts, createProduct, updateProduct, deleteProduct } from '../services/api'
-import productsData from '../data/products.json'
 
 const Admin = () => {
   const { logout } = useAuth()
@@ -64,10 +63,12 @@ const Admin = () => {
             setProducts(JSON.parse(savedProducts))
           } catch (parseError) {
             console.error('Error parsing cached products:', parseError)
-            setProducts(productsData)
+            // No hard-coded fallback; start with an empty product list
+            setProducts([])
           }
         } else {
-          setProducts(productsData)
+          // No cached data available — start with empty product list
+          setProducts([])
         }
       } finally {
         setLoading(false)

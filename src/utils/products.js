@@ -1,8 +1,7 @@
-import productsData from '../data/products.json'
 import { fetchProducts, fetchCategories, fetchTypes } from '../services/api'
 
 /**
- * Get products from API, with fallback to localStorage/JSON
+ * Get products from API, with fallback to localStorage
  * This ensures admin updates are reflected across all pages
  * @returns {Promise<Array>} Array of products
  */
@@ -22,11 +21,12 @@ export const getProducts = async () => {
         return JSON.parse(savedProducts)
       } catch (parseError) {
         console.error('Error parsing products from localStorage:', parseError)
-        return productsData
+        // Return an empty list instead of a hard-coded JSON file
+        return []
       }
     }
-    // Final fallback to JSON file
-    return productsData
+    // Final fallback: return empty array (no hard-coded products)
+    return []
   }
 }
 
@@ -41,10 +41,12 @@ export const getProductsSync = () => {
       return JSON.parse(savedProducts)
     } catch (error) {
       console.error('Error parsing products from localStorage:', error)
-      return productsData
+      // Return empty list instead of hard-coded JSON
+      return []
     }
   }
-  return productsData
+  // No cached data available — return empty list
+  return []
 }
 
 /**
@@ -86,6 +88,24 @@ export const getTypesFromAPI = async () => {
   } catch (error) {
     console.warn('Failed to fetch types from API:', error)
     return ['All']
+  }
+}
+
+/**
+ * Fetch products for public pages (Home, Products, Categories).
+ * This intentionally does NOT fall back to localStorage or bundled JSON so
+ * public pages only show live API data — otherwise they'll display empty.
+ * @param {Object} [filters] optional filter object forwarded to API
+ * @returns {Promise<Array>} Array of products or empty array on failure
+ */
+export const getPublicProducts = async (filters = {}) => {
+  try {
+    const products = await fetchProducts(filters)
+    return products
+  } catch (error) {
+    console.warn('Failed to fetch public products from API:', error)
+    // Do NOT return cached or hard-coded products for public pages
+    return []
   }
 }
 

@@ -10,7 +10,7 @@ import {
   Loader2,
 } from 'lucide-react'
 import ProductCard from '../components/ProductCard'
-import { getProducts } from '../utils/products'
+import { getPublicProducts } from '../utils/products'
 import { fetchProducts } from '../services/api'
 
 const Categories = () => {
@@ -28,7 +28,7 @@ const Categories = () => {
     const loadProducts = async () => {
       setLoading(true)
       try {
-        const products = await getProducts()
+        const products = await getPublicProducts()
         setProductsData(products)
         setFilteredProducts(products)
       } catch (error) {
